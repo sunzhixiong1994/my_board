@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/iconfont.js"></script>
     <title>我的画板</title>
     <style>
 
@@ -20,9 +21,27 @@
         </canvas>
     </div>
     <div class="tool">
-        <input type="color" id="color_select">
-        <button class="btn1">Pen</button>
-        <button class="btn2">Eraser</button>
+        <svg class="icon pen" aria-hidden="true">
+            <use xlink:href="#icon-pen"></use>
+        </svg>
+        <svg class="icon eraser" aria-hidden="true">
+            <use xlink:href="#icon-eraser"></use>
+        </svg>
+        <svg class="icon thick" onclick="pen_width+=4" aria-hidden="true">
+            <use xlink:href="#icon-plus-circle"></use>
+        </svg>
+        <svg class="icon thin" onclick="pen_width-=4" aria-hidden="true">
+            <use xlink:href="#icon-minus-circle"></use>
+        </svg>
+        <div class="color_box">
+            <input type="color" class="color_select">
+            <svg class="icon color_cur" aria-hidden="true">
+                <use xlink:href="#icon-color"></use>
+            </svg>
+        </div>
+        <svg class="icon save" aria-hidden="true">
+            <use xlink:href="#icon-save"></use>
+        </svg>
     </div>
     <script src="js/main.js"></script>
 </body>
