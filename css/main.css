@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.box{
+    font-size: 0;
+}
+
 #board {
     background: #eee;
 }

@@ -72,7 +72,6 @@ board.addEventListener('mousemove', function (e) {
 });
 
 board.addEventListener('touchmove', function (e) {
-    console.log(e);
     if (pen_switch == true && eraser_switch == false) {
         paint(e.touches[0].pageX, e.touches[0].pageY);
     } else if (pen_switch == false && eraser_switch == true && mouse_down) {
